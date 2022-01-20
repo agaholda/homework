@@ -1,0 +1,288 @@
+body {
+  --font-color: #190f27;
+  --font-family: Rubik;
+  background-color: black;
+}
+
+/* .wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+} */
+
+.login-section {
+  display: flex;
+  margin: 150px auto;
+  background: #ffffff;
+  max-width: 1920px;
+  /* max-height: 1080px; */
+}
+
+.main-img {
+  flex: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(40, 70, 66, 0.6);
+  position: relative;
+}
+#img2 {
+  display: none;
+}
+.main-img img {
+  width: 100%;
+  mix-blend-mode: multiply;
+  /* flex: 1; */
+  height: 1080px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.image {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  /* this makes image responsive */
+  width: 30%;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
+}
+.login-form {
+  display: flex;
+  flex: 45%;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 10% 7.5%;
+  justify-content: center;
+}
+
+h1 {
+  margin: 38px 0 32px 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.06px;
+  color: var(--font-color);
+}
+.buttons {
+  min-height: 50px;
+  border: 1.5px solid #284642;
+  box-sizing: border-box;
+  padding: 11px 14px 12px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 24px;
+}
+
+.buttons:hover {
+  background-color: pink;
+}
+
+.buttons span {
+  height: 17px;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--font-color);
+}
+
+.buttons img {
+  width: 27px;
+  height: 27px;
+}
+
+.text-divider {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: -0.0571429px;
+  display: flex;
+  margin: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--font-color);
+}
+
+.divider {
+  height: 1px;
+  background-color: #edebf0;
+  flex-grow: 1;
+}
+
+.form-group {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  margin-top: 6px;
+}
+
+.form-group > label {
+  position: absolute;
+  width: auto;
+  padding: 0px 5px;
+  top: -10px;
+  left: 10px;
+  background-color: white;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.333333px;
+  color: #64606a;
+}
+.form-group input {
+  margin: 0px;
+  height: 56px;
+  border: 1px solid #edebf0;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.form-group > ::placeholder {
+  font-family: Rubik;
+  color: var(--font-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.first-last {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+#password {
+  margin-bottom: 2px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: stretch;
+}
+.registration {
+  height: 50px;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  background: #284642;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.registration:hover {
+  background-color: pink;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #64606a;
+}
+
+#checkbox {
+  height: 18px;
+  width: 18px;
+}
+a {
+  color: #64606a;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #284642;
+  text-underline-position: under;
+}
+.account {
+  color: #64606a;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 822px) {
+  .login-section {
+    flex-direction: column-reverse;
+    margin: auto;
+    /* max-height: 1050px; */
+  }
+  .first-last {
+    flex-direction: column;
+  }
+  .main-img {
+    flex-basis: 35%;
+    justify-content: flex-start;
+  }
+
+  .main-img img {
+    height: 25%;
+    object-fit: contain;
+  }
+  #img1 {
+    display: none;
+  }
+  #img2 {
+    display: flex;
+  }
+  .image {
+    justify-content: flex-start;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .buttons span {
+    font-size: 12px;
+    line-height: 14.22px;
+  }
+  .text-divider {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .checkbox {
+    font-size: 12px;
+    line-height: 14.22px;
+  }
+  .registration {
+    font-size: 14px;
+  }
+  a {
+    font-size: 12px;
+  }
+  .account {
+    font-size: 12px;
+  }
+}
