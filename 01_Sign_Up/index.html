@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <div class="login-section">
-        <div class="login-form">
-          <h1>Register as a personal trainer</h1>
-<form>
-            <a href="https://www.facebook.com/" target="_blank" class="buttons">
+    <div class="login-section">
+      <div class="login-form">
+        <h1>Register as a personal trainer</h1>
+        <form>
+          <a href="https://www.facebook.com/" target="_blank" class="buttons">
             <img
-            
               src="../images/f_logo_RGB-Blue_114 1.png"
               alt="facebook logo"
             />
             <span>Register via Facebook</span>
           </a>
-          
-            <a href="https://www.instagram.com/?hl=en" target="_blank" class="buttons">
-            <img
-              src="../images/instagram 1.png"
-              alt="instagram logo"
-            />
+
+          <a
+            href="https://www.instagram.com/?hl=en"
+            target="_blank"
+            class="buttons"
+          >
+            <img src="../images/instagram 1.png" alt="instagram logo" />
             <span>Register via Instagram</span>
           </a>
           <div class="text-divider">
@@ -36,57 +39,64 @@
             <span>Or with your email</span>
             <div class="divider"></div>
           </div>
-         <div class="first-last">
+          <div class="first-last">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input id="first-name" type="text" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" type="text" placeholder="Last Name" />
+            </div>
+          </div>
           <div class="form-group">
-            <label for="first-name">First Name</label>
-          <input id="first-name" type="text" placeholder="First Name"/>
-          
-        </div>
-        <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input id="last-name" type="text" placeholder="Last Name"/>
-          
-        </div>
-      </div>
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input id="email" type="email" placeholder="E-mail" />
-          
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input id="password" type="password" placeholder="Password" pattern=".{6,}" required title="Password must have at least 6 characters" />
-          
-        </div>
-        
-      <div class="checkbox">
-          <input type="checkbox" id="checkbox"
-            > <span class=""> I have read the
-            <a href="">Terms & Conditions</a> </span>
-          </input>
-        </div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="E-mail" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              pattern=".{6,}"
+              required
+              title="Password must have at least 6 characters"
+            />
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <span> I have read the <a href="">Terms & Conditions</a> </span>
+          </div>
 
           <button class="registration">Register for free</button>
-          
         </form>
-          <div class="text-divider">
+        <div class="text-divider">
           <div class="divider"></div>
         </div>
-        
-          <span class="account"
-            >Already have an account?
-            <a href="">Login</a>
-          </span>
-        </div>
-        
-        <div class="main-img">
-          <img src="../images/background1.png" alt="man working" id="img1" >
-          <img src="../images/background1-small.png" alt="man working" id="img2">
-          <div class="image">
-          <img src="../images/Group 5272.png" alt="find your perfect workspace" />
-        </div>
+
+        <span class="account"
+          >Already have an account?
+          <a href="">Login</a>
+        </span>
+      </div>
+
+      <div class="main-img">
+        <img src="../images/background1.png" alt="man working" id="img1" />
+        <img
+          src="../images/background1-small.png"
+          alt="man working"
+          id="mobile-image"
+        />
+        <div class="image">
+          <img
+            src="../images/Group 5272.png"
+            alt="find your perfect workspace"
+          />
         </div>
       </div>
+    </div>
     <script src="script.js"></script>
-  </body> 
+  </body>
 </html>

@@ -1,7 +1,7 @@
 body {
   --font-color: #190f27;
   --font-family: Rubik;
-  background-color: black;
+  background-color: #000000;
 }
 
 /* .wrapper {
@@ -28,7 +28,7 @@ body {
   background-color: rgba(40, 70, 66, 0.6);
   position: relative;
 }
-#img2 {
+#mobile-image {
   display: none;
 }
 .main-img img {
@@ -67,9 +67,9 @@ body {
 }
 
 h1 {
-  margin: 38px 0 32px 0;
+  margin: 38px 0 32px;
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.06px;
@@ -79,7 +79,7 @@ h1 {
   min-height: 50px;
   border: 1.5px solid #284642;
   box-sizing: border-box;
-  padding: 11px 14px 12px 14px;
+  padding: 11px 14px 12px;
   border-radius: 7px;
   cursor: pointer;
   margin: 0;
@@ -88,16 +88,17 @@ h1 {
   justify-content: center;
   text-decoration: none;
   gap: 24px;
+  transition: 1s;
 }
 
 .buttons:hover {
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 
 .buttons span {
   height: 17px;
   font-family: Rubik;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   color: var(--font-color);
 }
@@ -156,6 +157,9 @@ h1 {
   border: 1px solid #edebf0;
   box-sizing: border-box;
   border-radius: 7px;
+  padding-left: 10px;
+  font-family: Rubik;
+  font-size: 16px;
 }
 
 .form-group > ::placeholder {
@@ -193,10 +197,11 @@ form {
   border-radius: 7px;
   cursor: pointer;
   margin-top: 10px;
+  transition: 1s;
 }
 
 .registration:hover {
-  background-color: pink;
+  background-color: #ffc0cb;
 }
 .checkbox {
   display: flex;
@@ -225,7 +230,7 @@ a {
 }
 .account {
   color: #64606a;
-  font-family: Roboto;
+  font-family: Rubik;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -252,7 +257,7 @@ a {
   #img1 {
     display: none;
   }
-  #img2 {
+  #mobile-image {
     display: flex;
   }
   .image {
